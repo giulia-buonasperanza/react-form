@@ -25,3 +25,5 @@ const articles = [
         content: "Learn how to stay productive while working from home..."
     } 
 ]
+
+export default articles;

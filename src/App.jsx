@@ -1,8 +1,9 @@
-import HelloClasse154 from "./components/HelloClasse154";
+import MainContent from "./components/MainPart.jsx/mainContent";
 
 function App() {
-  return (
+  return (<>
     <h1>Blog React</h1>
-  );
+    <MainContent />
+  </>);
 }
 export default App;
