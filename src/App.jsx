@@ -1,4 +1,4 @@
-import MainContent from "./components/MainPart.jsx/mainContent";
+import MainContent from "../src/components/MainPart.jsx/MainContent.jsx";
 
 function App() {
   return (<>
