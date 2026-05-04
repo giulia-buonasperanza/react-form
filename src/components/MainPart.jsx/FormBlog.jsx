@@ -42,10 +42,10 @@ function FormBlog({ onAddArticle }) {
                     <input type="text" className="form-control" id="title" name="title" value={blogPost.title} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="content" className="form-label">Content:</label>
+                    <label htmlFor="content" className="form-label">Contenuto:</label>
                     <textarea className="form-control" id="content" name="content" value={blogPost.content} onChange={handleChange} />
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Pubblica!</button>
             </form>
         </div>
 
