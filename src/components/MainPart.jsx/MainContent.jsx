@@ -19,19 +19,30 @@ function MainContent() {
             id: crypto.randomUUID()
         };
         setArticles([...articles, articleWithId]);
-    };  
-    
-    return (
-        <div className="main-content">
-            <FormBlog onAddArticle={addArticle} />
-            
-            {articles.map(article => (
-                <CardBlog key={article.id} 
-                title={article.title} 
-                content={article.content} />
-            ))}
-        </div>
-    );
-}
+    };
 
-export default MainContent;
+    const deleteArticle = (id) => {
+        {
+            const newArticles = articles.filter(article => article.id !== id);
+            setArticles(newArticles);
+        };
+    };
+
+
+        return (
+            <div className="main-content">
+                <FormBlog onAddArticle={addArticle} />
+
+                {articles.map(article => (
+                    <CardBlog key={article.id}
+                        title={article.title}
+                        content={article.content} 
+                        onDelete={deleteArticle}
+                        id={article.id}
+                        />
+                ))}
+            </div>
+        );
+    }
+
+    export default MainContent;
